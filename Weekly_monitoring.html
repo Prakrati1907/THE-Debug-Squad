@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Health Monitoring Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weekly Health Monitoring Sheet</h1>
+        <form action="submit_health_data.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="">Please select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="temperature">Body Temperature:</label>
+                <input type="text" id="temperature" name="temperature" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Residence Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="checkup">How often do you get a health checkup?</label>
+                <label><input type="text" id="checkup" name="checkup" required></label>
+
+            </div>
+            <div class="form-group">
+                <label for="health">What do you say about your overall health?</label>
+                <label><input type="text" id="health" name="health" required></label>
+
+            </div>
+            <div class="form-group">
+                <label for="diseases">Do you have any chronic diseases?<br>Yes or No:</label>
+                <label><input type="text" id="diseases" name="disease" required></label>
+            </div>
+            <div class="form-group">
+                <label for="conditions">Do you have any hereditary conditions/diseases?<br>i.e; high blood pressure</label>
+                <label><input type="text" id="conditions" name="conditions" required></label>
+
+            </div>
+            <div class="form-group">
+                <label for="habit">Are you habitual to drug and alcohol?</label>
+                <label><input type="text" id="habit" name="habit" required></label>
+
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
