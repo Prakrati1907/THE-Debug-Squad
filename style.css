@@ -4,6 +4,11 @@
     border:border-box;
     /*border box says the border should be included in given height and width */
 }
+a{
+    color: black;
+    text-decoration: none;
+}
+
 
 .navbar{
     height: 60px;
@@ -226,7 +231,7 @@ background: red;
 
 /* /footer/ */
 .footer-panel1{
-    background-color: #008000;
+    background-color: #000;
     height: 50px;
     color: white;
     display: flex;
